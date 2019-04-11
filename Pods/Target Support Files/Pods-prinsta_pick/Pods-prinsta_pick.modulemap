@@ -1,0 +1,6 @@
+framework module Pods_prinsta_pick {
+  umbrella header "Pods-prinsta_pick-umbrella.h"
+
+  export *
+  module * { export * }
+}

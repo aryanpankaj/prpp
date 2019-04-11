@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CartData" representedClassName="CartData" syncable="YES" codeGenerationType="class">
+        <attribute name="book_color_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="book_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="book_name_font" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="book_name_font_color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="book_page_color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="book_price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="book_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="category_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userImages" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="UserImages" syncable="YES"/>
+    </entity>
+    <entity name="UserImages" representedClassName="UserImages" syncable="YES" codeGenerationType="class">
+        <attribute name="image_order_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_qty" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFromSocialMedia" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order_id" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CartData" positionX="-54" positionY="18" width="128" height="210"/>
+        <element name="UserImages" positionX="-63" positionY="-18" width="128" height="120"/>
+    </elements>
+</model>

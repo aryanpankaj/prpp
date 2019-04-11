@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="homeCollectionViewCell" reuseIdentifier="homeCollectionViewCell" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="prinsta_pick" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Lc-lD-fCA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jkL-2k-64E">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7sg-xs-b3m">
+                                <rect key="frame" x="50" y="248.5" width="275" height="170"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wel Come to Prinsta Pick" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhj-0k-29E">
+                                        <rect key="frame" x="15" y="20" width="245" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="HxQ-yX-8lQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dw6-Ei-uc8">
+                                        <rect key="frame" x="18" y="44" width="239" height="121"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dw6-Ei-uc8" firstAttribute="leading" secondItem="7sg-xs-b3m" secondAttribute="leading" constant="18" id="4kK-iG-XIY"/>
+                                    <constraint firstAttribute="height" constant="170" id="HKC-wN-84Z"/>
+                                    <constraint firstItem="dw6-Ei-uc8" firstAttribute="top" secondItem="qhj-0k-29E" secondAttribute="bottom" constant="3" id="IeL-bZ-97h"/>
+                                    <constraint firstAttribute="trailing" secondItem="qhj-0k-29E" secondAttribute="trailing" constant="15" id="QzY-TL-fBf"/>
+                                    <constraint firstAttribute="trailing" secondItem="dw6-Ei-uc8" secondAttribute="trailing" constant="18" id="Uai-rn-IzB"/>
+                                    <constraint firstAttribute="bottom" secondItem="dw6-Ei-uc8" secondAttribute="bottom" constant="5" id="bOr-kP-iu0"/>
+                                    <constraint firstItem="qhj-0k-29E" firstAttribute="top" secondItem="7sg-xs-b3m" secondAttribute="top" constant="20" id="sIw-38-nxB"/>
+                                    <constraint firstItem="qhj-0k-29E" firstAttribute="leading" secondItem="7sg-xs-b3m" secondAttribute="leading" constant="15" id="z9T-9F-g3j"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.0039215686269999999" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jkL-2k-64E" firstAttribute="leading" secondItem="9Lc-lD-fCA" secondAttribute="leading" id="DIb-3Q-FsG"/>
+                            <constraint firstAttribute="bottom" secondItem="jkL-2k-64E" secondAttribute="bottom" id="HRp-mh-B5q"/>
+                            <constraint firstAttribute="trailing" secondItem="7sg-xs-b3m" secondAttribute="trailing" constant="50" id="Uai-0C-YvL"/>
+                            <constraint firstAttribute="trailing" secondItem="jkL-2k-64E" secondAttribute="trailing" id="YRo-Gh-irK"/>
+                            <constraint firstItem="7sg-xs-b3m" firstAttribute="leading" secondItem="9Lc-lD-fCA" secondAttribute="leading" constant="50" id="Z3w-I4-EnB"/>
+                            <constraint firstItem="jkL-2k-64E" firstAttribute="top" secondItem="9Lc-lD-fCA" secondAttribute="top" id="Ze0-rB-o0C"/>
+                            <constraint firstItem="7sg-xs-b3m" firstAttribute="centerY" secondItem="jkL-2k-64E" secondAttribute="centerY" id="tHM-c6-0px"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="9Lc-lD-fCA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4gv-OV-3ZV"/>
+                <constraint firstAttribute="trailing" secondItem="9Lc-lD-fCA" secondAttribute="trailing" id="EOT-Q0-Pph"/>
+                <constraint firstItem="9Lc-lD-fCA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dEE-xD-Z5u"/>
+                <constraint firstAttribute="bottom" secondItem="9Lc-lD-fCA" secondAttribute="bottom" id="hfX-F7-UO4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="bgImageView" destination="jkL-2k-64E" id="Qie-hZ-4vq"/>
+                <outlet property="centerConstraint" destination="tHM-c6-0px" id="FbI-Ok-cuj"/>
+                <outlet property="lbl_description" destination="dw6-Ei-uc8" id="esw-7U-KL0"/>
+                <outlet property="lbl_title" destination="qhj-0k-29E" id="f3m-5y-WRd"/>
+                <outlet property="popUPView" destination="7sg-xs-b3m" id="rhT-Zh-cKC"/>
+                <outlet property="view_main" destination="9Lc-lD-fCA" id="tJz-DR-AEl"/>
+            </connections>
+            <point key="canvasLocation" x="23.199999999999999" y="50.824587706146929"/>
+        </collectionViewCell>
+    </objects>
+</document>
